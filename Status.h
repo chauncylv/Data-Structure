@@ -1,7 +1,7 @@
 //程序相关状态码及宏函数列表头文件"Status.h"
 #ifndef STATUS_H
 #define STATUS_H
-
+//#ifndef在C中是非常关键的东西，防止一个源文件多次包含一个头文件，而不是防止多个源文件引用同一个头文件，#endif结尾。
 /* 状态码 */
 #define	TRUE		1			//真 
 #define	FALSE		0			//假
@@ -37,7 +37,7 @@ typedef int Status;
 //摁Enter键继续 
 #define PressEnter
  {
-	fflush(stdin);
+	fflush(stdin);  //清空输入缓冲区
 	printf("Press Enter...");
 	getchar();
 	fflush(stdin);
