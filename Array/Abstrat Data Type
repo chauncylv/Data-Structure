@@ -1,0 +1,16 @@
+//类似于线性表，抽象数据类型数组可以形式的定义为：
+ADT Array{
+  数据对象
+  数据关系
+  基本操作：
+  InitArray(&A,n,bound1,...,boundn)
+    操作结果：若维数n和各维长度合法，则构造相应的数组A，并返回Ok
+  DestroyArray(&A)
+    操作结果：销毁数组A
+  Value(A,&e,index1,...,indexn)
+    初始条件:A是n维数组，e为元素变量，随后是n个下标值。
+    操作结果:若各下标不超界，则e赋值为所指定的A的元素值，并返回ok
+  Assign(&A,e,index1,...,indexn)
+    初始条件:A是n维数组，e为元素变量，随后是n个下标值。
+    操作结果:若各下标不超界，则e赋值为所指定的A的元素值，并返回ok
+}ADT Array;
