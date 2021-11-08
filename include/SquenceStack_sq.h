@@ -40,4 +40,4 @@ Status Push_sq(SqStack *s,SElemType_sq e); //元素e进栈
 Status Pop_sq(SqStack *s,SElemType_sq e); //元素e出栈
 Status StackTraverse_sq(SqStack s,void(visit)(SElemType_sq)); //访问栈
 
-#endif 
+#endif  
